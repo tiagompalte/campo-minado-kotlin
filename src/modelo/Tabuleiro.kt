@@ -76,7 +76,7 @@ class Tabuleiro(val qtdeLinhas: Int, val qtdeColunas: Int, private val qtdeMinha
     }
 
     fun forEachCampo(callback: (Campo) -> Unit) {
-        campos.forEach { linha -> linha.forEach { callback } }
+        campos.forEach { linha -> linha.forEach(callback) }
     }
 
     fun onEvento(callback: (TabuleiroEvento) -> Unit) {
